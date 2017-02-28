@@ -1,0 +1,28 @@
+0.  BITMAP(BMP) = 16 Million (True Color) 
+    JPEG = 16 Million (True Color)
+    GIF = 256 Per Frame (High Color)
+    PNG = 256 Terracolors (Scientific Colors)
+1.  GIF
+2.  lossless = if all original data can be recovered when the file is uncompressed.
+    lossy = Some of the data is lost during compression.
+3.  JPEG
+4.  You're telling the system you can now use that memory again.  But You're not actually deleting anything.  To do that
+    you would need to actually overwrite the memory.
+5.  Change all of the bits to 1's
+6.  The <stdint.h> header shall declare sets of integer types having specified widths,
+  and shall define corresponding sets of macros. It shall also define macros that specify limits of integer types 
+  corresponding to types defined in other standard headers.
+7.  Limits the width of binary intigers that are allowed to represent a number.
+8.  BYTE 8-BIT, DWORD & LONG 32 BITS AND WORD IS 16-BIT
+9.  bfType = Indicating a bitmap file. BM
+10. bfsize = the size of the BMP image + the size of the headers.
+    bisize = The number of bytes required by the structure (struct)
+11. It's origin is in the top left corner. It's top-down
+12. biBitCount of the BITMAPINFOHEADER structure determines the number of
+	bits.
+13. If there's no outfile given to the program.  This is a check not to write in space that doesn't belong.
+14. It's reading piece by piece.
+15. Because three is != / 4
+16. skips over padding if there's any.
+17. to indicate whether the offset is relative to the the current file position
+18. It's your TA holding a cat.

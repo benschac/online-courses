@@ -1,0 +1,22 @@
+0.  1. a lung disease that is otherwise known as silicosis.  It is also the longest word in the English dictonary.
+1.  getrusage:  getrusage()  returns  resource usage measures for who, which can be one
+       of the following:
+
+2.  2. 16
+3.  3. Those times will eventually change and you don't want to keep wasting memory in the stack adding variables.
+4.  
+    4. Step 1: First main checks if your have the right about of arg. values.  If not It'll throw an error at you.
+    Step 2: Initalize a stuct and baseline variable for holding time and Dictonary based of arg variable user has given.
+    Step 3: for loop looks into file content and sets to c, if c is not end of file keep looping, check if each char is
+            alpha and add char to work until word is set to var (done when non-alpha is present).  Checks if word is 
+            too long.
+            
+    Step 4: Runs rest of the checks needed for the program.
+    
+5.  5. fscanf doesn't have EOF baked in, so you're going to have some issues (or will have to write some more cod)
+        to stop the file reading.
+6.  6. Because they're used a fair bit in the program.
+7.  TODO
+8.  TODO
+9.  TODO
+10. TODO
