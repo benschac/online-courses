@@ -7,3 +7,6 @@ The Internet is chucked full of great information and cat videos. This repositor
 - [Johns Hopkins HTML, CSS, Javscript for Web Developers](https://www.coursera.org/learn/html-css-javascript-for-web-developers) [certificate](https://www.coursera.org/account/accomplishments/certificate/6V4KKD3KVWBX)
 - [Johns Hopkins Single Page Web Applications with AngularJS](https://www.coursera.org/learn/single-page-web-apps-with-angularjs)
 [certificate](https://www.coursera.org/account/accomplishments/records/4EEAWSWGCB62)
+
+#Books
+-[eloquentjs](eloquentjavascript.net)
