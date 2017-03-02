@@ -9,4 +9,4 @@ The Internet is chucked full of great information and cat videos. This repositor
 [certificate](https://www.coursera.org/account/accomplishments/records/4EEAWSWGCB62)
 
 #Books
--[eloquentjs](eloquentjavascript.net)
+- [eloquentjs](eloquentjavascript.net)
