@@ -1,0 +1,10 @@
+<ul>
+
+<!-- name of the menu item, its short_name, and the description -->
+	<li ng-repeat="item in narrow.found">Short Name: {{item.short_name }} | Name: {{ item.name }} <br/> 
+	Description: {{ item.description }}
+	 <button ng-click="narrow.removeItem($index)">Don't want this one!</button></li>
+		
+</ul>
+
+

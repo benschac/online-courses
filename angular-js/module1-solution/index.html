@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Module 1 solution</title>
+</head>
+<body ng-app="LunchCheck">
+
+<!-- To Do: 
+ - textbox 
+ - a button
+ - region where you will output the message. 
+ -->
+
+<div ng-controller="LunchController">
+	<input type="text" name="lunch" ng-model="lunch">
+	<button ng-click="displayLunch();">Check If Too Much</button>
+	<p>{{ totalLunch }}</p>
+</div>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="NarrowItDownApp">
+<head>
+	<title>Module 3 solution</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+	<div ng-controller="NarrowItDownController as narrow">
+		<input type="text" name="" value="chicken" ng-model="narrow.description">
+		<button ng-click="narrow.search(narrow.description)">Narrow It Down For Me!</button>
+		<div ng-show="narrow.found.length">
+			
+				<found-items
+				
+				></found-items>
+			
+		</div>
+		<span ng-hide="narrow.found.length">No Results Fonud!</span>
+		
+	</div>
+</body>
+</html>

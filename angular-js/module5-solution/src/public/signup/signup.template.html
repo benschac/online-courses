@@ -1,0 +1,77 @@
+<h1>Signup Template</h1>
+
+
+<fieldset>
+<legend>Registration</legend>
+	<form name='regForm' novalidate>
+
+	<input type="text" name="first" placeholder="First"
+	ng-model="reg.user.first"
+	required
+	minlength="2"
+	ng-maxlength="20">
+	{{ reg.user.first }}
+	<span
+	ng-if="(regForm.first.$error.minlength || regForm.first.$error.required) && regForm.first.$touched">
+	Firstname must be at least 2 characters long
+	</span>
+	<span ng-if="regForm.first.$error.maxlength && regForm.first.$touched">
+	First must not be longer than 20 characters
+	</span>
+	<br>
+
+	<input type="text" name="last" placeholder="Last"
+	ng-model="reg.user.last"
+	required
+	minlength="2"
+	ng-maxlength="20">
+	{{ reg.user.last }}
+	<span
+	ng-if="(regForm.last.$error.minlength || regForm.last.$error.required) && regForm.last.$touched">
+	Lastname must be at least 2 characters long
+	</span>
+	<span ng-if="regForm.last.$error.maxlength && regForm.last.$touched">
+	Lastname must not be longer than 20 characters
+	</span>
+	<br>
+
+	<input type="email" name="email" placeholder="Email"
+	ng-model="reg.user.email"
+	required>
+	<span ng-if="regForm.email.$invalid && regForm.email.$touched">
+	Must be a valid email address: handle@domain format
+	</span>
+	<br>
+
+	<input type="text" name="phone" placeholder="Phone ###-###-####"
+	ng-model="reg.user.phone"
+	pattern="(\d{3})-(\d{3})-(\d{4})">
+	<span ng-if="regForm.phone.$invalid && regForm.phone.$touched">
+	Phone must be in the format ###-###-####.
+	</span>
+	<br>
+
+	<input type="text" name="short_name" placeholder="Ex. A3"
+	ng-model="reg.user.short_name">
+	<span ng-if="regForm.short_name.$invalid && regForm.short_name.$touched">
+	Entername like A3.
+	</span>
+	<br>
+
+	<button
+	ng-disabled="regForm.$invalid"
+	ng-click="reg.submit()">Submit</button>
+
+	<div style="margin-top: 10px;">
+	Form valid? {{ regForm.$valid }}
+	</div>
+	</form>
+</fieldset>
+
+    <div id="info" ng-if="reg.success">
+    <p>Saved!</p>
+      First: {{ reg.user.first}} <br>
+      Last: {{ reg.user.last}} <br>
+      Email: {{ reg.user.email}} <br>
+      Phone: {{ reg.user.phone }}
+    </div>

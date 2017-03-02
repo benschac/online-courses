@@ -1,0 +1,16 @@
+<h1>Info template</h1>
+
+<div ng-if="info.user">
+	<ul>
+	<li>{{ info.user.first }}</li>
+	<li>{{ info.user.last }}</li>
+	<li>{{ info.user.email }}</li>
+	<li>{{ info.user.phone }}</li>
+	<menu-item menu-item="info.user.short_name"></menu-item>
+	</ul>
+</div>
+<div ng-if="!info.user">
+	<h1><a ui-sref="public.signup">Please Sign Up</a></h1>
+</div>
+
+

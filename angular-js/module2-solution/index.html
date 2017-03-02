@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Module 2 solution</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</head>
+<body ng-app="ShoppingListCheckOff">
+
+<!-- To Do: 
+ - shopping list that allows you to "check off" the items you've already bought, except instead of checking them off, the bought item simply moves to the "Already Bought" list.
+
+ - 
+ -->
+
+ <div ng-controller="ToBuyController as toBuyCtrl">
+ 	<h3>To Buy</h3>
+ 	<ul ng-show="toBuyCtrl.items">
+ 		<li ng-repeat="item in toBuyCtrl.items"> Buy {{item.quantity}} of {{item.name}} <button ng-click="toBuyCtrl.addToBought(item.name, item.quantity, $index)">bought</button></li>
+ 	</ul>
+
+ 	<h4 ng-hide="toBuyCtrl.items.length">Everything is bought!</h4>
+ </div>
+ <div ng-controller="AlreadyBoughtController as boughtCtrl">
+ <h3>Already Bought</h3>
+ 	<ul ng-hide="boughtCtrl.items.length === 0">
+ 		<li ng-repeat="item in boughtCtrl.items"> Bought {{item.quantity}} of {{item.name}}</li>
+ 		
+ 	</ul>
+
+ 	<h4 ng-hide="boughtCtrl.items.length">Nothing bought yet</h4>
+
+ </div>
+
+</body>
+</html>
