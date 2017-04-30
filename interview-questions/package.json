@@ -1,0 +1,12 @@
+{
+  "name": "interview-questions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^19.0.2"
+  }
+}
